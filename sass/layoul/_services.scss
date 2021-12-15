@@ -1,0 +1,40 @@
+.services-box {
+	padding-top: 94px;
+}
+.services {
+	flex-direction: row;
+	@include flex;
+}
+.services__content {
+	width: 270px;
+	letter-spacing: 0.03em;
+	margin-right: 30px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.services__subtitle {
+	@include font(14px, 700, 1.14, 0.03em);
+	text-transform: uppercase;
+	color: $primary-text-color;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.services__text {
+	@include font(14px, 400, 1.71, 0.03em);
+	color: $title-text-color;
+	margin: 0;
+}
+/* icons */
+.services-icon {
+	width: 270px;
+	height: 120px;
+	background: #f5f4fa;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	@include flex;
+	&__img {
+		width: 70px;
+		height: 70px;
+	}
+}

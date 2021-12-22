@@ -86,6 +86,7 @@ a {
 .header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0;
+  background-color: lawngreen;
 }
 
 .header__box, .header__nav {
@@ -390,6 +391,16 @@ a {
   overflow: hidden;
 }
 
+.overlay::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  /* opacity: 0; */
+}
+
 .overlay__img {
   display: block;
   max-width: 100%;
@@ -447,16 +458,6 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: 0;
-}
-
-.overlay::before {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 294px;
-  background-color: rgba(33, 150, 243, 0.9);
-  /* opacity: 0; */
 }
 
 .portfolio-box__link:hover .overlay::before,
